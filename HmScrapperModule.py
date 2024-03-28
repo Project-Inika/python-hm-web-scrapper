@@ -8,22 +8,24 @@ class HMScrapperModule:
     def __init__(self):
         self.driver = webdriver.Chrome()
 
-    def fetch_content(self, url, delay=2):
+    def fetch_content(self, url,numOfImages, delay=2):
         """
         Fetch the HTML content of a given URL.
 
         Args:
             url (str): The URL to fetch.
+            numOfImages (Int): Number of products to fetch.
             delay (int, optional): The delay in seconds before fetching the content. Defaults to 2.
 
         Returns:
             str: The HTML content of the page.
         """
+        url = f"{url}?page-size={numOfImages}"
         self.driver.get(url)
         time.sleep(delay)
         return self.driver.page_source
 
-    def get_extracted_data(self, url):
+    def get_extracted_data(self, url, numOfImages):
         """
         Extract product information from the given URL.
 
@@ -33,7 +35,7 @@ class HMScrapperModule:
         Returns:
             list: A list of dictionaries containing the extracted product information.
         """
-        content = self.fetch_content(url)
+        content = self.fetch_content(url, numOfImages)
         product_list = self.extract_product_list_html(content)
 
         result_list = []
@@ -121,13 +123,12 @@ class HMScrapperModule:
 
 
 if __name__ == "__main__":
-    pass
+    # pass
 
     # Usage
-    # url = ('https://www2.hm.com/en_in/men/shop-by-product/tshirts-tank-tops.html?sort=stock&image-size=small&image'
-    #        '=model&offset=0&page-size=108')
-    # scrapper = HMScrapperModule()
-    # result_list = scrapper.get_extracted_data(url)
-    # scrapper.save_to_json(result_list, "new_data.json")
+    url = ('https://www2.hm.com/en_in/men/shop-by-product/tshirts-tank-tops.html')
+    scrapper = HMScrapperModule()
+    result_list = scrapper.get_extracted_data(url, 400)
+    scrapper.save_to_json(result_list, "hm_data_tshirts-tank-tops.json")
 
 
