@@ -123,13 +123,17 @@ def scrape_product_details(driver, url):
     # Assuming you want the third last image
     product = products_image_list[-3]
     image_url = product.find("img", class_="media-image__image")
+    product_title = soup.find("h1", class_="product-detail-info__header-name")
+    image_desc_div = soup.find("div", class_="product-detail-description")
+    image_desc = image_desc_div.find("p").text.strip()
+
     if image_url:
         image_url = image_url["src"]
     else:
         print("Image URL not found.")
         image_url = ""
 
-    return image_url
+    return image_url, image_desc, product_title
 
 
 def main():
@@ -178,20 +182,24 @@ def main():
     all_product_details = []
 
     for category_file in os.listdir(category_dir):
-        category_name = category_file.split('_')[0]
-        print(f"Scraping product details for category: {category_name}")
-
-        with open(os.path.join(category_dir, category_file), 'r') as f:
-            product_urls = f.readlines()
-
         category_product_details = []
+        try:
+            category_name = category_file.split('_')[0]
+            print(f"Scraping product details for category: {category_name}")
 
-        for product_url in product_urls:
-            product_url = product_url.strip()
-            if product_url:
-                product_details = scrape_product_details(driver, product_url)
-                category_product_details.append({"url": product_url, "image_url": product_details})
-                print(f"Scraped details for product: {product_url}")
+            with open(os.path.join(category_dir, category_file), 'r') as f:
+                product_urls = f.readlines()
+
+
+
+            for product_url in product_urls:
+                product_url = product_url.strip()
+                if product_url:
+                    product_img_url, product_details, product_title = scrape_product_details(driver, product_url)
+                    category_product_details.append({"url": product_url, "image_url": product_img_url, "product_details": product_details, "product_title":product_title})
+                    print(f"Scraped details for product: {product_url}")
+        except:
+            pass
 
         all_product_details.extend(category_product_details)
 
