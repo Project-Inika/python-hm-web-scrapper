@@ -42,5 +42,5 @@ for product in products:
     product_urls.append(output)
 
 
-with open("../zara_products_url_list.json", "w") as f:
+with open("zara_products_url_list.json", "w") as f:
     json.dump(product_urls, f)
