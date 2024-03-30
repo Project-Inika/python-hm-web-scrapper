@@ -4,11 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79451d3-4aea-43f0-acdf-6ea74ebeb985" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/zaraScrapper.py" afterDir="false" />
+    <list default="true" id="e79451d3-4aea-43f0-acdf-6ea74ebeb985" name="Changes" comment="feat: added fun to store json data into csv file and download images to folder &#10;fix: changed name to uuid format for image">
+      <change afterPath="$PROJECT_DIR$/category_files/ new_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/___ new_in_en_woman_new_in_l1180_html_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/___ new_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/accessories _ jewellery_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/bags_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/beachwear_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/best sellers_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/blazers_in_en_woman_blazers_l1055_html_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/blazers_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/cardigans _ sweaters_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/co_ord sets_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/dresses_in_en_woman_dresses_l1066_html_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/dresses_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/gift card_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/jackets_in_en_woman_jackets_l1114_html_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/jackets_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/jeans_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/knitwear_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/makeup_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/perfumes_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/shirts_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/shoes_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/shorts _ skorts_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/skirts_in_en_woman_skirts_l1299_html_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/skirts_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/special prices_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/sweatshirts_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/t_shirts_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/tops _ bodysuits_in_en_woman_tops_l1322_html_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/tops _ bodysuits_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/trench _ coats_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/trousers_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/waistcoats_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_files/zara origins_products.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fetch_n_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm_all_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm_all_data_woman.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm_images_metadata.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image_data_woman.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rough_extract_all_links.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rough_zara_all_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rouph_gen_scrapper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/threadup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thredup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_csv_names.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zara_products_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zara_products_url_list.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HmScrapperModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/HmScrapperModule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content.txt" beforeDir="false" afterPath="$PROJECT_DIR$/content.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zaraScrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/zaraScrapper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +80,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dvghule121"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dvghule121&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -48,45 +98,42 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2e91K3YB8O5VG6mMuInbfe3ENio" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.HmScrapperModule.executor": "Run",
+    "Python.fetch_n_products.executor": "Run",
     "Python.main.executor": "Run",
     "Python.productsScrapper.executor": "Run",
+    "Python.rough.executor": "Run",
+    "Python.rough_extract_all_links.executor": "Run",
+    "Python.rough_zara_all_products.executor": "Run",
+    "Python.rouph_gen_scrapper.executor": "Run",
+    "Python.thredup.executor": "Run",
+    "Python.update_csv_names.executor": "Run",
     "Python.zaraScrapper.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feat/download__img"
+    "git-widget-placeholder": "feat/download__img",
+    "last_opened_file_path": "D:/Local-D/PycharmProjects/hmScrapper"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="HmScrapperModule" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="hmScrapper" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HmScrapperModule.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.rough_zara_all_products">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="hmScrapper" />
       <option name="ENV_FILES" value="" />
@@ -109,7 +156,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="productsScrapper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="rough_extract_all_links" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hmScrapper" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,7 +169,73 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/productsScrapper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rough_extract_all_links.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rough_zara_all_products" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hmScrapper" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rough_zara_all_products.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="rouph_gen_scrapper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hmScrapper" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rouph_gen_scrapper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="threadup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hmScrapper" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\Local-D\PycharmProjects\hmScrapper\threadup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,9 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HmScrapperModule" />
+        <item itemvalue="Python.rough_zara_all_products" />
+        <item itemvalue="Python.rough_extract_all_links" />
         <item itemvalue="Python.zaraScrapper" />
-        <item itemvalue="Python.productsScrapper" />
+        <item itemvalue="Python.rouph_gen_scrapper" />
+        <item itemvalue="Python.threadup" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711553399452</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: added fun to store json data into csv file and download images to folder &#10;fix: changed name to uuid format for image">
+      <option name="closed" value="true" />
+      <created>1711606029440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711606029440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,14 +316,28 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feat/download_img" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="feat: added fun to store json data into csv file and download images to folder &#10;fix: changed name to uuid format for image" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added fun to store json data into csv file and download images to folder &#10;fix: changed name to uuid format for image" />
   </component>
 </project>
