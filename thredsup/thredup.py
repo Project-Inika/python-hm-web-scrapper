@@ -77,10 +77,12 @@ def extract_product_info(product):
     description = extract_product_description( base + link) if link != "" else ""
     count += 1
     print(count)
-    result = {"Description:": description,
-              "Type:": type_info,
-              "Link:": base + link,
-              "Image link": img["src"] if img else ""}
+    result = {"product_details": description,
+              "product_title": type_info,
+              "product_url": base + link,
+              "image_url": img["src"] if img else "",
+              "product_color":""
+              }
     all_threds_products_data.append(result)
     insert_update_all_threadsup_data()
     return result

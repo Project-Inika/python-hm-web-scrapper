@@ -1,6 +1,8 @@
 import json
 
-
+"""
+Use it to rename file or var 
+"""
 def rename_json_fields(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
