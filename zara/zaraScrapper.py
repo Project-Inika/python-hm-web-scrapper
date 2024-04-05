@@ -3,7 +3,9 @@ import time
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
+"""
+Single product scrapper script 
+"""
 
 def scroll_to_bottom(driver):
     # Scroll to the bottom of the page

@@ -3,6 +3,10 @@ import json
 import urllib.request
 import subprocess
 
+
+"""
+!!! Discontinued 
+"""
 def download_image(url, output_path):
     urllib.request.urlretrieve(url, output_path)
 
