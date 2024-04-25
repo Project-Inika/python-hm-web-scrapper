@@ -2,25 +2,49 @@ import json
 import time
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
+
+# 
 
 class HMScrapperModule:
     def __init__(self):
         self.driver = webdriver.Chrome()
 
-    def fetch_content(self, url, delay=2):
+    import time
+
+    def fetch_content(self, url,  delay=10, scroll_delay=3):
         """
         Fetch the HTML content of a given URL.
 
         Args:
             url (str): The URL to fetch.
-            delay (int, optional): The delay in seconds before fetching the content. Defaults to 2.
+            delay (int, optional): The delay in seconds before fetching the content. Defaults to 10.
+            scroll_delay (float, optional): The delay in seconds between each scroll step. Defaults to 0.5.
 
         Returns:
             str: The HTML content of the page.
         """
+        url = f"{url}"
         self.driver.get(url)
+
+        # Click the "Load More" button repeatedly until it's hidden
+        while True:
+            try:
+                load_more_button = WebDriverWait(self.driver, scroll_delay).until(
+                    EC.visibility_of_element_located((By.CLASS_NAME, "js-load-more"))
+                )
+                load_more_button.click()
+                time.sleep(delay)  # Add a delay after clicking the button
+
+            except TimeoutException:
+                # If the button is not found, break the loop
+                break
         time.sleep(delay)
+
         return self.driver.page_source
 
     def get_extracted_data(self, url):
@@ -35,6 +59,7 @@ class HMScrapperModule:
         """
         content = self.fetch_content(url)
         product_list = self.extract_product_list_html(content)
+        print(len(product_list))
 
         result_list = []
         for product in product_list:
@@ -121,13 +146,13 @@ class HMScrapperModule:
 
 
 if __name__ == "__main__":
-    pass
+    # pass
 
     # Usage
-    # url = ('https://www2.hm.com/en_in/men/shop-by-product/tshirts-tank-tops.html?sort=stock&image-size=small&image'
-    #        '=model&offset=0&page-size=108')
-    # scrapper = HMScrapperModule()
-    # result_list = scrapper.get_extracted_data(url)
-    # scrapper.save_to_json(result_list, "new_data.json")
+    # here put the link of product list page or any category page it will scrap all the products from the page
+    url = ('https://www2.hm.com/en_in/women/shop-by-product/view-all.html')
+    scrapper = HMScrapperModule()
+    result_list = scrapper.get_extracted_data(url)
+    scrapper.save_to_json(result_list, "hm_data_all_women.json")
 
 

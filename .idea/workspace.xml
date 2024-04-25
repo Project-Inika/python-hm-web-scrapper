@@ -4,22 +4,392 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e79451d3-4aea-43f0-acdf-6ea74ebeb985" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hmScrapper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HmScrapperModule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productsScrapper.py" afterDir="false" />
+    <list default="true" id="e79451d3-4aea-43f0-acdf-6ea74ebeb985" name="Changes" comment="thred up data downloading lgic added">
+      <change afterPath="$PROJECT_DIR$/thredsup/all_threds_up_data_renamed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thredsup/thredup_product_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_extracted_zara.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/all_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/ new_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/0 _ 6 months_in_en_kids_newborn_l474_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/1½ _ 6 years_in_en_kids_babyboy_l5_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/1½ _ 6 years_in_en_kids_babygirl_l87_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/6_14 years_in_en_kids_boy_l173_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/6_14 years_in_en_kids_girl_l323_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/___ new_in_en_man_new_in_l711_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/___ new_in_en_woman_new_in_l1180_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/accessories _ jewellery_in_en_woman_accessories_l1003_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/accessories _ shoes _ 0 _ 14 years_in_en_kids_accessories_l3_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/accessories_in_en_man_accessories_l537_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/bags _ backpacks_in_en_man_bags_l563_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/bags_in_en_woman_bags_l1024_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/beachwear_in_en_woman_beachwear_l1052_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/best sellers_in_en_man_the_best_sellers_l5899_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/blazers_in_en_man_blazers_l608_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/blazers_in_en_woman_blazers_l1055_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/cardigans _ sweaters_in_en_woman_knitwear_l1152_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/cargo_in_en_man_trousers_cargo_l1780_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/co_ord sets_in_en_woman_co_ords_l1061_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/dresses_in_en_woman_dresses_l1066_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/gift card_in_en_z_giftcard_l1394_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/hoodies _ sweatshirts_in_en_man_sweatshirts_l821_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/jackets _ coats_in_en_man_outerwear_l715_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/jackets_in_en_woman_jackets_l1114_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/jeans_in_en_man_jeans_l659_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/jeans_in_en_woman_jeans_l1119_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/kids_in_en_kids_perfumes_l7249_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/knitwear_in_en_woman_knitwear_l1152_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/linen_in_en_man_linen_l708_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/makeup_in_en_woman_beauty_makeup_l4414_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/overshirts_in_en_man_overshirts_l3174_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/perfumes_in_en_man_accessories_perfumes_l551_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/perfumes_in_en_woman_beauty_perfumes_l1415_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/polo shirts_in_en_man_polos_l733_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/shirts_in_en_man_shirts_l737_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/shirts_in_en_woman_shirts_l1217_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/shoes_in_en_man_shoes_l769_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/shoes_in_en_woman_shoes_l1251_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/shorts _ skorts_in_en_woman_trousers_shorts_l1355_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/shorts_in_en_man_bermudas_l592_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/skirts_in_en_woman_skirts_l1299_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/special prices_in_en_man_special_prices_l806_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/special prices_in_en_woman_special_prices_l1314_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/suits_in_en_man_suits_l808_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/summery garments_in_en_man_summer_items_l6052_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/sweaters _ cardigans_in_en_man_knitwear_l681_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/sweatshirts_in_en_woman_sweatshirts_l1320_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/swimwear_in_en_man_beachwear_l590_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/t_shirts_in_en_man_tshirts_l855_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/t_shirts_in_en_woman_tshirts_l1362_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/tops _ bodysuits_in_en_woman_tops_l1322_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/tracksuits_in_en_man_jogging_l679_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/trench _ coats_in_en_woman_outerwear_l1184_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/trousers_in_en_man_trousers_l838_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/trousers_in_en_woman_trousers_l1335_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/waistcoats_in_en_woman_outerwear_vests_l1204_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/zara athleticz_in_en_zara_athleticz_l4651_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_files/zara origins_in_en_origins_mkt4659_html_products.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/h&amp;m/HmScrapperModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/h&amp;m/HmScrapperModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h&amp;m/productsScrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rough_data_all_load_categorywise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rough_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rouph_gen_scrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp_sso.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_asyn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_async_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thredsup/download_thread_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/thredsup/download_thread_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thredsup/rough.py" beforeDir="false" afterPath="$PROJECT_DIR$/thredsup/rough.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/all_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/all_products_zara_metadata_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extract_all_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/zara/extract_all_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_bags___backpacks_in_en_man_bags_l563_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_bags_in_en_woman_bags_l1024_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_beachwear_in_en_woman_beachwear_l1052_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_cargo_in_en_man_trousers_cargo_l1780_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_gift_card_in_en_z_giftcard_l1394_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_jackets___coats_in_en_man_outerwear_l715_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_jeans_in_en_woman_jeans_l1119_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_linen_in_en_man_linen_l708_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_polo_shirts_in_en_man_polos_l733_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_shirts_in_en_man_shirts_l737_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_skirts_in_en_woman_skirts_l1299_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_special_prices_in_en_man_special_prices_l806_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_special_prices_in_en_woman_special_prices_l1314_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_t_shirts_in_en_man_tshirts_l855_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_t_shirts_in_en_woman_tshirts_l1362_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/_content_category_files_zara_athleticz_in_en_zara_athleticz_l4651_html_products.txt_products_details (1).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files_0___6_months_in_en_kids_newborn_l474_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files_1½___6_years_in_en_kids_babyboy_l5_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files_1½___6_years_in_en_kids_babygirl_l87_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files_6_14_years_in_en_kids_boy_l173_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files_6_14_years_in_en_kids_girl_l323_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files__new_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files_accessories___jewellery_in_en_woman_accessories_l1003_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/extracted_data/products_data/category_files_hoodies___sweatshirts_in_en_man_sweatshirts_l821_html_products.txt_products_details.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/fetch_n_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/zara/download_and_save_zara_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/rough_extract_all_links.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/rough_zara_all_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/zara/get_all_product_links.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/upload_images_zara_to_gcp.py" beforeDir="false" afterPath="$PROJECT_DIR$/zara/upload_images_zara_to_gcp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zaraScrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/zara/zaraScrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/003d8283-f1a2-4a3f-aa3d-403d56787891.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/01d8b1bf-cc8d-42fb-ac60-0a882d009be1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/05aebbde-ada8-44b2-a8af-b789482c208b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/07e04f06-0997-470a-997b-83605766b950.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/0990fd02-18ec-49cd-bba5-8295e5638ca7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/0a616157-cd09-4b4f-bdaf-544a12a4e61c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/0a70e14a-01cf-4026-abbd-7ec29837937c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/0bbc301d-d488-47a8-ae2a-a8e7b88820a3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/0cf39d7a-9d2b-4df7-ba20-77a7d1df5639.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/0d7b7b6c-1e8d-4f1f-917d-bf7b33f0f497.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/0f59cdba-2d97-472f-b0d1-e2b3939048e9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1091341a-b05f-4cfd-8aaa-5affe3fedd3c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1302075c-4826-43a4-8ae1-e3f4701740b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/135075ed-815d-44bc-a66c-60255e2ef400.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/14732c1a-bb6d-4f61-a701-b57632669414.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/14dc0f13-b188-4aee-be51-782f369bf985.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1557897d-fe6c-4b75-aaf9-60368fd65f86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/16f8b651-15c1-4006-9842-5a5dde6e668e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1ae04826-26c9-4699-8c95-a858d11add03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1ae36720-e434-4046-8038-6407cb7ed83e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1e462f93-d64f-41cf-a816-a36ba5b59d83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1e68368b-5b6a-4c2d-8799-0d3826863309.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1f05213c-e216-406f-8559-f86a21e87f32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/1fdae44b-bcf6-42ea-8e66-19dc46506e82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/20117e38-b8fc-4be7-8cca-83c13e519e3a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/20ce7f7a-10bc-433f-9a65-44b91e7528de.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2347bbec-6545-4ac7-a102-8ad76477330a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/239edb83-e5b8-49cf-913c-0b99f42ca616.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/23bc6896-bf2c-4cee-8f62-d194c489fee4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/260f7231-d5b2-4e17-b1e5-d02a2f4e01a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2adc9147-60a3-475d-832a-584f0d21a719.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2bc679e3-4d18-49d7-a75c-a9c94082c639.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2be044b9-15de-475a-85da-39713f7c92bd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2bfadc61-cf5e-4512-997b-5730a7277019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2c1c5b7b-de71-44fd-bf50-5173afb9c038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2cfc669f-5587-44a1-92ea-45c18c65401d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2d0ac07c-7519-4378-a22a-c0fca052fd49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2d0d5383-e805-4ae2-b382-01f110f1fd35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2dc2d077-66ef-457d-8b10-aa42d9cae0a8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2f26cf66-9797-4ec5-bcf5-deb4d7c03f3e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/2ff92b3c-83fb-47d3-afb3-8e01814b05b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/317a3d9e-be31-4607-abe1-4be1b7fe81ef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/32f8ea24-b17f-4383-a3ad-5efd9c6aee1a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/352fa09b-49ec-48c7-ad7f-775e8a892ce6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/36215cde-d7c7-46c0-9c1e-48246e3910dd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/362e17ee-2830-4710-b91e-0faada17afad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/37f3bc73-5da5-4f33-b793-9513d02af1fd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/38a8a22b-b8fd-465d-9f9a-82b7cb57a579.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/39452d43-74ca-4868-9f80-d9c1e08cffe4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/3a5df263-2a17-49b5-a341-df00d415b0c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/3b49d096-72c6-4a9f-91c3-c8983f217a47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/3b8de5f5-5f33-4f08-9e17-e667e90c9ecc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/3bcafe26-620a-431c-b1e1-0c0888d743bf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/3d076163-3f06-43de-920c-a27dfb579d7d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/3d596467-87d6-4c0e-a4df-eadc43d1513c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/3d655d3c-539a-47d2-813e-c1cec27f5fc5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/400585a4-c126-415b-b63e-5b732a26a56b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/445cd55c-3529-4364-9675-d416ab26024d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4461d2aa-13d3-45c4-b729-fa18418e2546.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/455a2bc4-6ef5-4937-975c-f248aec11253.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/456d5efc-b18a-4dc3-a349-6c08d2ea3aa6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4586f916-3a48-4b77-8622-5241cb41a472.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4662cbad-3605-49e9-8c74-6e2952aebce0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/480c8d94-8092-4e41-8821-3021f914c204.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/48cbe788-5e9a-44f9-a463-06b9d1eea3ec.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4a213b99-36f4-4354-bcc6-905a8c047179.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4a6228ea-cf24-4f44-936e-599468c223b7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4b962f03-6639-4919-b1ef-be16ce13eef4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4c9fb472-ab75-4a35-aff7-f2b092d17e43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4cda2ea8-c00f-4f1c-909a-716dbcdfef7d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4ddd800e-3907-4e0e-b663-9b414592838d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4e6ed617-76a1-41c9-b06c-13d84b559e0a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4eae4f13-45b5-4450-b3af-e72c44eafed5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4ee85683-5cc4-4b0d-bbba-3c84a5977029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4f159471-bcc7-4680-b6bf-12b462370851.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/4f1e6deb-4117-4e81-b14e-28f82f149072.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5016cb4c-2cdc-4d37-9bd5-5f09d9bb67e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/50b4805e-f18f-4492-92c2-5bbb3171bc48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5188ff0e-92a8-4e5b-a229-bb90f344a21f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/519090dd-59c6-411b-a2ed-6626058af7ed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/52ac9707-61d8-45e4-84b7-969dba11e987.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/52d5a1e9-f15a-43b8-9044-ca71e4532894.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/52e84d54-cdc4-46df-8e0a-1f0d89803dfb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5305f6ea-6226-4332-9e5d-11e3fdeef412.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/54c6214b-740f-48f1-b33b-f9fc7dde19e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/560f17aa-2ebe-479d-95d1-d08463dad1dd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5670cce4-5fcc-4de0-9fe6-d759250d9f0c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/58b9dbcd-8480-41b8-9f9d-d7446ffd5aee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/595be35a-f38e-4e16-ac70-05d7df7af127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/596d3710-d710-4428-bc14-82827486e5ba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5a081924-e1f8-44f7-8bf5-0f98cddab9e0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5a2deb48-49fd-45e7-9e5b-dd99fbe742cb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5a5915ab-20f3-4913-b4da-2db08023d402.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/5b2c5753-43e6-488e-bb3a-95aa204db6af.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/6266d55c-6419-475d-b6c3-a8a6eb195f41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/637121a2-009f-4e57-bfba-464d3313d020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/639cfbaa-1cb0-449f-ab3b-d56bacc2ee11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/64cbbe69-5f1e-47be-a2cd-ed6159ed9c8e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/695385d6-2a18-41b2-8a84-4c9a31ded009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/6a738466-0978-43c2-bb9e-ea278b4ff57b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/6a8cf0d9-0ad8-4012-9fd6-aece6cbbc623.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/6ce1eb2b-afbf-45a7-8be0-ad111a77a9f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/6ded0ee5-cad3-4a91-8923-f3f0dc3ad7be.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/701d819d-679c-45af-b586-c26e0d68852a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/70eff9b5-940d-4e60-b4f0-1ee93a3f4b51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/719fef67-44cf-4a65-be77-fe9dd6a7827f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7438dd4f-a9d4-4524-8767-c2802ec87d03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/74efc737-54fd-4ad9-9c90-42b045e0c2c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7565cb31-6747-4147-990b-7f1f56943385.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/75b7c27e-6e0b-4be0-8030-cc52fb4f3ea4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/76ab87d4-a6a7-47df-9fe1-c3423a09e42d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/78188cd1-e526-4bb1-9931-f81795d5d118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/793479c1-2fc6-45c0-9f2e-ac0c7ac2b59f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7a9aaf07-9672-4589-aa9b-3d9dbef386c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7abc3506-738e-48a7-a4e8-7028aa85946c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7bab5ff6-400a-4093-86b3-f1a59fa9dcbf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7ddbccfa-941f-4310-b6b9-afc98f5ccd43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7df30874-7692-47be-b826-524f68c54442.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/7e9db889-c794-4a4a-9230-ffaac33b6700.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/816a502e-0c46-4b9d-b433-fb2f2682f1b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/82284aa2-7004-4d9d-b1e3-4be7fba87a20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/8255bc31-ea09-470a-af00-000461cc4a7c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/82d7cd92-88fc-4c57-b680-6eef8126982d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/82e8224d-0fc3-421f-8386-6f2980be071b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/83628a3e-0a7a-4cd4-8b74-5f85b945dbf3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/84d2e6b6-9646-45aa-ae49-c52f1baf73b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/860a47ed-9c18-488c-8697-46d2292db6be.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/861ab349-8be7-4a9a-ab41-88bc55eb8ead.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/86bede82-22f7-4c6b-b6d3-0833672f6bfc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/8a56cba7-f32d-485e-ba30-111099adfb08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/8b5ee3d8-e985-4856-8df5-59be72b8f193.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/8e51f0d6-4adb-4e9d-be86-d7419691e1d4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/900faee0-7b1f-4987-a9a4-0fb71ef07c37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/90e836d0-4015-49d4-9ade-3e088c216bd3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/91858a10-cec2-4dfb-8091-6ad1882581ac.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/91da4d1c-793d-4810-93f3-dc79d58ae8c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/92213989-817d-48d4-90dd-360662c79e42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/931480ff-4ed8-43ce-8cff-75c9524c7052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/938b7476-6449-4737-975a-a72995743b78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/938c6ab4-bfd0-4e8e-b9ff-2eb3371bc20b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9441cc52-ded0-466d-a45c-51880c265abc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/95248005-5ea6-409d-8805-dc5e400ad9bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9527d280-9a7e-42d2-b162-22f523b07208.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/958b542e-31b5-4df7-8a34-1a0396efac6f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/95bf655c-fa5e-43ea-8284-e7ba88bbb2a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/95c7bd83-c70e-4ab4-9e72-dc75055cc0ee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9667df61-dd96-4fc7-a46a-3128cf65b41b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9c205310-1ab6-4c1d-88e6-4f8243bb41af.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9c6f64e0-caf3-4933-89a3-c753f6af9bd7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9cb5b344-3551-41b9-a296-a1d69642f7cd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9d25bdd3-0ef6-4549-99a6-fc04e4c4d308.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9f33dc70-d8e3-43d4-a322-0039494abbab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9f5c34f0-96d6-4faa-b7b6-393b426233d9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/9f89fe8b-48bc-4218-89cb-ca8aaf456781.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a0c9e312-0a8f-4f85-b8b4-454848c61486.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a0fc0537-6ff8-4b9b-a444-88ba55ebfc47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a2f1e516-dbe2-4b94-ae79-6186380324a1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a35dd442-3d37-42ad-8837-50e67e377c6b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a41a8de3-0459-430f-aadd-92f489376350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a443fcb9-a40a-4e08-9452-d551872cc7a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a455aeb9-ec08-4bfd-8e72-0f7147408e21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a49b8c53-3d11-4ea7-9799-4a739e056fed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a4c406a0-c08c-4530-8bfa-a2ea2ac6a1c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a5d2468d-68de-448b-9199-fbeb75d87db6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a92563b5-d213-44df-9ee4-88e37b1ee9f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a96d7967-afed-4458-a225-d434f79cd2a6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/a9f22b24-48ef-4862-b99f-5ae07593d0d5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ab15e118-0809-490a-9188-4e935e2d5cbf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ac99220b-0f85-4a9c-8625-b99a8533647e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/acf26dd8-9e86-4226-98d0-b0b025fc3ecd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ad22a41c-a59b-4ce7-92f9-2962a81b7f0e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/adc7696c-9984-49bb-9311-41192f2ec9d1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/af5e1edf-88bd-40e1-9958-1f096d7e0733.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b0524354-a4b1-4b8c-9161-a2b396e5cce5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b2480f57-57e2-4daf-8c5a-8310e0c2d16e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b2b1f0ee-4a2f-4032-878e-d86ad9240b9b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b2c49163-5df3-4304-a1d7-d40be58632b0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b2f090c4-303f-4583-98d2-97bff79baa82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b320b8c1-683d-4d05-820d-9b7fe83190e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b5bc2d7e-f8a6-4583-b45f-90d27eaba0c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b6b7df3d-dfb9-449d-aedc-5e85563e2ece.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b6f8fd2a-2a53-4087-9ee7-5226528a2d7e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b825d8c2-2597-4d40-82c8-7c828f671735.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b8f84765-0413-4eb3-b1ca-4c6ded554f40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b912ee0c-e745-46ad-87bb-fe51dfbd3e93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/b9e5948e-6794-4446-a2cf-07fecbbc6e7d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/bc40bef3-d379-45ff-b33b-74a64c948f9f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/bcc03b80-0cf6-4672-8d7a-c0fb3ba9314d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/be44a09f-a465-4e10-82d8-dbc5809783d8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c0bae682-e6de-409c-acb2-1ee225b79a75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c10590ff-6756-4aba-80ef-7c967c56698c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c10fb65e-8222-4c93-aac2-1c139b16b19a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c2beeb10-7768-4f29-9709-2c1664a5ca19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c4e02552-cd06-44d0-b5b7-47e49b52eaef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c55a3ee0-234e-4d91-871c-cad7a1fa0548.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c7c6bd79-be21-4e7d-a1d9-0fca3a5146e2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/c8e22e0f-fe95-4ab9-bf36-b34b7ea88b92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ca445e2f-74e4-4e64-9d01-b8fe81511340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ca5fc30b-49de-4688-95b4-c35688a276e0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cb10f69b-0c2f-48ca-8d0f-6ef15a6e8013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cb16b8d8-ff1e-4809-9f89-acb1fb487ad4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cb69f3ce-ab84-4794-906a-d648bb50d19c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cb7d87b3-9347-4e52-a2fd-5fddd39775ae.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cccc7f20-f1ad-4bfa-975d-dbb38f1a5340.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cd5682c8-c0b9-4f96-b994-d1bcd7cbd272.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cec917d3-d21f-486b-b261-c67c72c2fa2a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cef56262-eb27-4cbd-9992-a7a9de9ab1e0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/cfbbbd9f-1191-402f-a546-a8ee1b3fb653.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d01e32cf-858b-4c0e-8e92-a38e7ee3ff6f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d2139896-f6d6-4f07-be0a-0c3ae44e9695.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d2750048-f902-445c-838f-80ecd8152053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d36b2c85-f822-46a1-9622-03c8e374bd8e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d387d5b3-bd4c-4b6f-8d51-50dc3805d2f3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d3c88369-8f1b-4eb8-932b-b4ddcf380309.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d406c76b-73da-46ff-91a4-00fad2a32fba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d48952ef-5a60-4363-a389-1111ab769bd3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d50e9959-2c31-40fd-ba3f-b2f31610d154.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d5b82410-174e-46b1-88b6-0c5005ccd01e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d5d7384e-e514-4ae8-a323-651a046ce964.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d5e2dc1e-80a9-4c1e-b10b-f1bfbf2ca49d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d75b6a0f-3b10-45e3-86c3-148352e96f2b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d76a8bc4-0ef2-4c07-b95f-99a76f5c0807.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d7abdf83-5bac-42f7-b813-a8fc4aa00bdb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d7eedde3-5770-44f6-bef7-907988ddc056.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/d8a9ef35-85f4-4da0-b48d-1a06260dc34a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/db580539-1b27-42e2-996f-3c423c13ebc3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/db9145dc-4f0a-4937-9a3b-0d3df2c4b314.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/dc287b43-2cdd-4bfa-a844-35e2524f73a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/dcb7c2d9-600f-443b-ad7a-0708ca16a874.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/dce54b6b-f350-452c-bbbc-08939a29b491.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/dda166c6-9845-42bb-af5f-e55d16d8d746.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/dda66923-6830-44d4-9233-7416c755c674.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/de11ef20-d567-4579-91cb-4a175ea40754.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/df26193e-f7a6-40f5-815a-227b1961c3bd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e0defa08-5c64-4cef-9496-38baad4c7e0c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e26e0da9-dd67-4969-a05a-2ebac9832533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e33e3b1c-5ab5-4bc8-97df-dabdcb32ca46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e34edb3b-b011-4fea-9307-b496bbff107d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e3c71622-f0ce-4c16-9303-4cc6e7487191.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e3daf17e-12ca-44e1-8db8-d2545dfb4f8e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e48ff0c4-c0d4-4209-8acb-f29b0fab065d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e510e9bc-c48c-43f4-8f0a-4112cfaa389c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/e53ef287-6fcf-4223-b729-bc02e50c92fa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/eacec23a-2f6e-485a-988e-4363722f13dd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/eb67f039-99f0-4626-8750-d7b7efab708f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ef42a834-324c-40de-9296-dcfc3efb186d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ef87287f-4f5c-4d02-9ed3-6e1193890a51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f00847a1-2d0a-4a50-a74b-0b7390f0efaf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f0c0096e-8a24-4e82-abdd-8b83f6ed9e5e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f2c191e2-f29f-4352-b556-689478a081f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f361ee61-9eb4-4c9b-a390-670e4b417bcb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f5dc31cb-51c5-482d-a463-1427f4059d07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f6a2ef76-e565-4825-a83b-b390c427a82e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f8ce204f-414f-478e-9ee3-a564957dda61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/f9743524-d673-414f-b779-d429d14c8723.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fb230406-8f84-405e-9fbf-3512388a6ef6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fb7f2b25-7511-4c59-aece-1fd131bc1682.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fca0a05b-74f0-4661-9792-871b6360e9ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fce469fa-1805-4eff-98a1-90ea846645b7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fdc93ea9-5b32-4e41-9059-3dffffd10de4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fe53a036-c90a-49a5-a108-4743bc14b13e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fe66faf7-ea2f-4b70-94b5-8ffbf686f9b9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/fe9c5cbe-0088-4b83-b455-31b786e2df78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ff6a837f-84b8-4252-8f4f-810b730aa103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ff9c7d7d-3a06-449a-b3d1-50d19131e087.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_images/ffc24208-2203-4394-82e2-74e97dd5f1fe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_product_data_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_products_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zara/zara_products_url_list.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,29 +399,83 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feat/download_img" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dvghule121&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d5ca43b3-ab57-4d6a-98c4-7d882e82a36a" />
+        <option name="url" value="https://github.com/Project-Inika/python-hm-web-scrapper.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2e91K3YB8O5VG6mMuInbfe3ENio" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Python.HmScrapperModule.executor&quot;: &quot;Run&quot;,
+    &quot;Python.download_thread_images.executor&quot;: &quot;Run&quot;,
+    &quot;Python.extract_all_data (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.extract_all_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fetch_n_products.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_all_product_links.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.productsScrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rough.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rough_data_all_load_categorywise.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rough_extract_all_links.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rough_tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rough_zara_all_products.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rouph_gen_scrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_asyn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_async_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.threadup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.thredup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.update_csv_names.executor&quot;: &quot;Run&quot;,
+    &quot;Python.upload_images_zara_to_gcp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zaraScrapper.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+    &quot;git-widget-placeholder&quot;: &quot;feat/zara__all__data&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Local-D/PycharmProjects/hmScrapper/zara&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="HmScrapperModule" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper\zara" />
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper\zara\extracted_data" />
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper\zara" />
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper\thredsup" />
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper\h&amp;m" />
+      <recent name="D:\Local-D\PycharmProjects\hmScrapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.get_all_product_links">
+    <configuration name="download_and_save_zara_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hmScrapper" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -60,11 +484,55 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zara" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HmScrapperModule.py" />
+      <option name="SCRIPT_NAME" value="D:\Local-D\PycharmProjects\hmScrapper\zara\download_and_save_zara_images.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="download_thread_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hmScrapper" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/thredsup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thredsup/download_thread_images.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_all_product_links" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hmScrapper" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zara" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zara/get_all_product_links.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +554,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="D:\Local-D\PycharmProjects\hmScrapper\h&amp;m\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,7 +563,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="productsScrapper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="rough" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hmScrapper" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,11 +572,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/thredsup" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/productsScrapper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thredsup/rough.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="thredup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hmScrapper" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/thredsup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thredsup/thredup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,8 +609,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HmScrapperModule" />
-        <item itemvalue="Python.productsScrapper" />
+        <item itemvalue="Python.get_all_product_links" />
+        <item itemvalue="Python.download_thread_images" />
+        <item itemvalue="Python.rough" />
+        <item itemvalue="Python.thredup" />
+        <item itemvalue="Python.download_and_save_zara_images" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +633,71 @@
       <option name="presentableId" value="Default" />
       <updated>1711301912825</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1711553399452</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711553399452</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: added fun to store json data into csv file and download images to folder &#10;fix: changed name to uuid format for image">
+      <option name="closed" value="true" />
+      <created>1711606029440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711606029440</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: zara_scrapper whole website scrapper">
+      <option name="closed" value="true" />
+      <created>1711832684461</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711832684461</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: zara_scrapper whole website scrapper">
+      <option name="closed" value="true" />
+      <created>1711837216781</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711837216785</updated>
+    </task>
+    <task id="LOCAL-00005" summary="organised files">
+      <option name="closed" value="true" />
+      <created>1711838121909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711838121909</updated>
+    </task>
+    <task id="LOCAL-00006" summary="organised files">
+      <option name="closed" value="true" />
+      <created>1711838974234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711838974234</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added_thred_scraping logic">
+      <option name="closed" value="true" />
+      <created>1712010880246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712010880246</updated>
+    </task>
+    <task id="LOCAL-00008" summary="thred up data downloading lgic added">
+      <option name="closed" value="true" />
+      <created>1712170513977</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712170513977</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,10 +705,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feat/download_img" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="feat: added fun to store json data into csv file and download images to folder &#10;fix: changed name to uuid format for image" />
+    <MESSAGE value="feat: zara_scrapper whole website scrapper" />
+    <MESSAGE value="organised files" />
+    <MESSAGE value="added_thred_scraping logic" />
+    <MESSAGE value="thred up data downloading lgic added" />
+    <option name="LAST_COMMIT_MESSAGE" value="thred up data downloading lgic added" />
   </component>
 </project>
